@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "b673bd01-9145-4816-b3e5-7b29fb5b78c6",
+		"name": "Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Component A",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Javi\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/componentA",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"componentA"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Javier",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
