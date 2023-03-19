@@ -1,4 +1,4 @@
-package com.example.prueba.domain.componentA;
+package com.example.prueba.domain.componenta;
 
 
 import org.springframework.data.repository.CrudRepository;

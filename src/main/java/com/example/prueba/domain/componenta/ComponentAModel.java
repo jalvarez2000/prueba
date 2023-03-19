@@ -1,4 +1,4 @@
-package com.example.prueba.domain.componentA;
+package com.example.prueba.domain.componenta;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
