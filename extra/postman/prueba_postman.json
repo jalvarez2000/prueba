@@ -2,11 +2,12 @@
 	"info": {
 		"_postman_id": "b673bd01-9145-4816-b3e5-7b29fb5b78c6",
 		"name": "Prueba",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "694768"
 	},
 	"item": [
 		{
-			"name": "Component A",
+			"name": "Article Post",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -21,12 +22,200 @@
 					"raw": "{\n\t\"name\": \"Javi\"\n}"
 				},
 				"url": {
-					"raw": "{{baseUrl}}/componentA",
+					"raw": "{{baseUrl}}/article",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
-						"componentA"
+						"article"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Javier",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Article Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Javi\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/article/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"article",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Javier",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Article Get All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Javi\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/article",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"article"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Javier",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Warehouse Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Javi\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/warehouse/products",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"warehouse",
+						"products"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Javier",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Warehouse Available Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Javi\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/warehouse/availableProducts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"warehouse",
+						"availableProducts"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Javier",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Warehouse Sell Product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Javi\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/warehouse/product/sell/2",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"warehouse",
+						"product",
+						"sell",
+						"2"
 					],
 					"query": [
 						{
@@ -39,6 +228,5 @@
 			},
 			"response": []
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
