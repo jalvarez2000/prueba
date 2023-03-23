@@ -14,9 +14,8 @@
   - Use of the Controller pattern to expose the endpoints
   - Use of the DTO pattern to transfer data between layers
   - Use of the Mapper pattern to map the DTOs to the entities and vice versa
+  - Use of Sonar to analyze the code and detect possible errors
     
-
-
 ## Use
 - Execute the project with the command: `mvn spring-boot:run`
 - Execute the tests with the command: `mvn test`
