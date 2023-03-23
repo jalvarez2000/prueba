@@ -18,7 +18,7 @@ public class ProductServiceTests {
 
     @Test
     @Transactional
-    public void saveAndGetProductTest() {
+    void saveAndGetProductTest() {
         ProductModel savedProduct = new ProductModel();
         savedProduct.setName("Article 1");
         List<ContainedArticleModel> containedArticles = new ArrayList<>();
@@ -37,7 +37,7 @@ public class ProductServiceTests {
 
 
     @Test
-    public void getProductsTest() {
+    void getProductsTest() {
         Iterable<ProductModel> productModels = productService.getProducts();
         assert productModels.iterator().hasNext();
     }

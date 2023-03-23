@@ -10,7 +10,7 @@ public class ArticleServiceTests {
     ArticleService articleService;
     
     @Test
-    public void saveAndGetArticleTest() {
+    void saveAndGetArticleTest() {
         ArticleModel savedArticle = new ArticleModel();
         savedArticle.setArtId(100);
         savedArticle.setName("Article 1");
@@ -24,7 +24,7 @@ public class ArticleServiceTests {
     
     
     @Test
-    public void getArticlesTest() {
+    void getArticlesTest() {
         Iterable<ArticleModel> articles = articleService.getArticles();
         assert articles.iterator().hasNext();
     }

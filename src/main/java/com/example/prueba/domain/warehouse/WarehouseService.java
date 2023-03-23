@@ -45,9 +45,8 @@ public class WarehouseService {
         Iterable<ProductModel> products =  productService.getProducts();
         Iterable<ArticleModel> articles = articleService.getArticles();
         
-        Iterable<ProductAvailabilityDTO> productsAvailabilityDTO = AvailableProductsGenerator.execute(products, articles);
+        return AvailableProductsGenerator.execute(products, articles);
 
-        return productsAvailabilityDTO;
     }
     
     @Transactional

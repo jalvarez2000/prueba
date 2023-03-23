@@ -18,13 +18,13 @@ public class ArticleController {
 
     
     @GetMapping("/article/{id}")
-    private ArticleModel getArticle(@PathVariable Integer id) {
+    public ArticleModel getArticle(@PathVariable Integer id) {
         return articleService.getArticle(id).get();
     }
 
     @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/article")
-    private Iterable<ArticleModel> getArticles() {
+    public Iterable<ArticleModel> getArticles() {
         return articleService.getArticles();
     }
 }

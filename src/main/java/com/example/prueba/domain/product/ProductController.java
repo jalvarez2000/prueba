@@ -11,20 +11,20 @@ public class ProductController {
     }
 
     @PostMapping("/product")
-    private ProductModel saveArticle(@RequestBody ProductModel productModel) {
+    public ProductModel saveArticle(@RequestBody ProductModel productModel) {
         productService.saveProduct(productModel);
         return productModel;
     }
 
     
     @GetMapping("/product/{id}")
-    private ProductModel getArticle(@PathVariable Integer id) {
+    public ProductModel getArticle(@PathVariable Integer id) {
         return productService.getProduct(id).get();
     }
 
     @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/product")
-    private Iterable<ProductModel> getArticles() {
+    public Iterable<ProductModel> getArticles() {
         return productService.getProducts();
     }
 }
